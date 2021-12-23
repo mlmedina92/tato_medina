@@ -79,6 +79,7 @@ header {
     color: #F2F2F2;
     padding: 5px 20px;
     text-align: right;
+    grid-area: header;
 }
 
 .preheader strong {
@@ -86,7 +87,8 @@ header {
 }
 
 .preheader p,
-.preheader i {
+.preheader i,
+.preheader a {
     color: #F2F2F2;
     display: inline-block;
 }
@@ -128,11 +130,8 @@ main {
 .main-banner {
     display: block;
     height: auto;
-    margin: 0 0 40px;
-    width: 100vw;
-    position: relative;
-    left: -20px;
-    top: -20px;
+    margin: -20px -20px 40px;
+    width: 100%;
 }
 
 .cols-2-set {
@@ -304,18 +303,13 @@ footer .socials ul {
 /* gallery */
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
 }
 
-.gallery li {
-    width: 33%;
-    margin: 0 0 20px 0;
-}
-
-.gallery li img {
+.gallery img {
     width: 100%;
 }
 
