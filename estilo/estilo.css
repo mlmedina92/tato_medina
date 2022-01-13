@@ -132,6 +132,11 @@ header {
 .menu ul li {
     display: inline-block;
     margin-left: 20px;
+    transition: transform 300ms;
+}
+
+.menu ul li:hover {
+    transform: scale(1.1);
 }
 
 .menu ul li a {
@@ -143,7 +148,7 @@ header {
     font-weight: bold;
 }
 
-main{
+main {
     grid-area: main;
 
 }
@@ -421,8 +426,7 @@ iframe.mapa {
 
 /* Tablet */
 
-@media(max-width:1024px){
-
+@media(max-width:1024px) {
     .gallery{
         grid-template-columns: repeat(3, 1fr);
     }
