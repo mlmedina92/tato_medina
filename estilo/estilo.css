@@ -35,8 +35,8 @@ a:hover {
 }
 
 ul {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 ul li {
@@ -84,14 +84,14 @@ button:hover {
     background-color: #f2f2f2;
 }
 
-.page-layout{
+.page-layout {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
-        "footer";    
+        "footer";
 }
 
 header {
@@ -102,8 +102,6 @@ header {
 .preheader {
     background-color: #BF2626;
     color: #F2F2F2;
-    padding: 5px 20px;
-    text-align: right;
 }
 
 .preheader strong {
@@ -115,10 +113,6 @@ header {
 .preheader a {
     color: #F2F2F2;
     display: inline-block;
-}
-
-.preheader ul{
-    display: inline-flex;
 }
 
 .preheader ul li {
@@ -150,8 +144,6 @@ footer {
 .copyrigth {
     background-color: #d94646;
     color: #F2F2F2;
-    margin: 20px -20px 0px;
-    padding: 2px 20px;
     line-height: 28px;
     font-size: 10px;
 }
@@ -174,6 +166,8 @@ footer .logo a img {
 footer .links ul li a {
     color: #373B8C;
     font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
 }
 
 footer .links ul li a:hover {
@@ -189,31 +183,12 @@ footer .contact ul li strong {
 }
 
 footer .contact ul li p {
-
     display: inline-block;
     color: #373B8C;
 }
 
-footer .socials ul {
-    align-items: center;
-    display: flex;
-    justify-content: right;
-}
-
-.col.socials ul li {
-    margin-left: 10px;
-}
-
-.col.socials ul li a {
+.socials ul li a {
     font-size: 25px;
-}
-
-.col.links ul li {
-    margin: 0 0px 9px 0px;
-}
-
-.copyrigth p {
-    text-align: center;
 }
 
 .fixed-btn {
@@ -240,12 +215,12 @@ footer .socials ul {
 
 .fixed-btn:hover {
     width: 41px;
-    height: 41px;  
+    height: 41px;
     right: 17px;
     bottom: 67px;
 }
 
-.fixed-btn:hover i{
+.fixed-btn:hover i {
     line-height: 41px;
     color: #f2f2f2;
 
@@ -328,7 +303,7 @@ iframe.mapa {
 /* Tablet */
 
 @media(max-width:1024px) {
-    .gallery{
+    .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -390,18 +365,15 @@ iframe.mapa {
         border-top: solid 3px #BF2626;
     }
 
-    footer .socials ul {
-        justify-content: center;
-    }
-
     .gallery {
         margin: 10px 0;
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /* Small mobile */
-@media(max-width:480px){
-    .gallery{
+@media(max-width:480px) {
+    .gallery {
         grid-template-columns: repeat(1, 1fr);
 
     }
@@ -432,9 +404,9 @@ iframe.mapa {
     }
 }
 
-.carousel-control-next:focus, 
-.carousel-control-next:hover, 
-.carousel-control-prev:focus, 
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
 .carousel-control-prev:hover {
     background: none;
     opacity: 1;
