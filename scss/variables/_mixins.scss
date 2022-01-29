@@ -1,0 +1,13 @@
+@mixin fontstyle ($size: 14px, $line-height: 1.2, $weight: normal, $text-decoration: none, $text-transform: none) {
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $weight;
+    text-decoration: $text-decoration;
+    text-transform: $text-transform;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

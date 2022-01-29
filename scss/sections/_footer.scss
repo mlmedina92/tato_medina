@@ -1,0 +1,44 @@
+footer {
+  border-top: solid 3px $color-azul;
+  padding: 20px 20px 0;
+  grid-area: footer;
+
+  .logo a img {
+    width: 75px;
+    height: auto;
+  }
+
+  .links ul li a {
+    color: $color-azul;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+
+    &:hover {
+      color: $color-azul-claro;
+    }
+  }
+
+  .contact ul li {
+    padding-bottom: 16px;
+
+    strong {
+      margin-right: 3px;
+    }
+
+    p {
+      display: inline-block;
+      color: $color-azul;
+    }
+  }
+
+  .socials ul li a {
+    font-size: 25px;
+  }
+}
+
+.copyrigth {
+  @include fontstyle(10px, 28px);
+  background-color: $color-rojo-claro;
+  color: $color-blanco;
+}

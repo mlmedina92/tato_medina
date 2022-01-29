@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//primero van las variables 
+@import "variables/global";
+@import "variables/mixins";
+@import "variables/extends";
+
+// Sections
+@import "sections/index";
+@import "sections/header";
+@import "sections/nosotros";
+@import "sections/servicios";
+@import "sections/contacto";
+@import "sections/footer";
