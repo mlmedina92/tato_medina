@@ -156,12 +156,6 @@ form {
     font-size: 14px;
     font-weight: bold;
   }
-  
-  @for $i from 1 through 6{
-    h-child(#{$i}){
-        font-size: $i * 0.5rem;
-    }
-  }
 }
 
 /* Bootstrap sobre-escritura */
