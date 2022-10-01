@@ -8,7 +8,7 @@ footer {
     height: auto;
   }
 
-  .links ul li a {
+  .nav-item a &:hover {
     color: $color-azul;
     font-weight: bold;
     margin-bottom: 10px;
