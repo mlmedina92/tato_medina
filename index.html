@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- IDIOMA ES -->
 <html lang="es">
 
 <head>
@@ -7,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
         content="Empresa de servicios de tendidos de líneas eléctricas de baja y media tension y alquiler de grúas e hidrogrúas ">
-    <meta name="keywords" content="grúas,tendidos eléctricos,hidrogrúas,Tandil,venta y colocación de pilares monofásicos y trifásicos">
+    <meta name="keywords"
+        content="grúas,tendidos eléctricos,hidrogrúas,Tandil,venta y colocación de pilares monofásicos y trifásicos">
     <meta name="author" content="Lis Medina">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- etiqueta link en href escribo el enlace relativo -->
-
+    <!-- etiqueta link  href: escribo el enlace relativo -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
@@ -26,51 +25,79 @@
 <body>
     <div class="page-layout">
         <header>
-            <div class="preheader d-none d-md-block text-md-end px-3 py-1">
-                <ul class="d-inline-flex">
-                    <li>
-                        <p><strong>Administración:</strong></p>
-                        <!-- tel: te da la opcion para abrir alguna app p llamar o en mobile llamar directo  -->
-                        <a href="tel:2494026594" title="Administración">
-                            <i class="fab fa-whatsapp"></i> 2494026594
-                        </a>
-                    </li>
-                    <li>
-                        <p><strong>Servicios:</strong></p>
-                        <a href="tel:2494496102" title="Servicios">
-                            <i class="fab fa-whatsapp"></i> 2494496102
-                        </a>
-                    </li>
-                </ul>
+            <div class="container-fluid preheader">
+                <div class="row">
+                    <div class="col-8">
+                    </div>
+                    <div class="col-4">
+                        <div class="container">
+                            <div class="row">
+                                <p class="col-3"><strong>Administración:</strong></p>
+                                <!-- tel: te da la opcion para abrir alguna app p llamar o en mobile llamar directo  -->
+                                <a href="tel:2494026594" title="Administración" class="text-decoration-none col-3">
+                                    <i class="fab fa-whatsapp"></i> 2494026594
+                                </a>
+                                <p class="col-3"><strong>Servicios:</strong></p>
+                                <a href="tel:2494496102" title="Servicios" class="text-decoration-none col-3">
+                                    <i class="fab fa-whatsapp"></i> 2494496102
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-            <nav class="menu navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <!--logo-->
-                    <a href="./index.html" class="navbar-brand" title="Tato Medina">
-                        <img src="./images/logo.png" alt="Tato Medina" />
-                    </a>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="text-reset" href="./index.html" class="navbar-brand" title="Nimax">
+                        <img src="./images/logo.png" alt="Logo Tato Medina" /></a>
 
-                    <!--menu-->
+                    <!-- Menú mobile -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!-- Links menú pcipal -->
                     <div class="navbar-collapse justify-content-end collapse" id="navbarToggler">
-                        <!-- links menu pcipal-->
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="./sections/nosotros.html">Nosotros</a>
+                                <a class="text-reset nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./sections/servicios.html">Servicios</a>
+                                <a class="text-reset nav-link" href="./sections/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./sections/galeria.html">Galería</a>
+                                <a class="text-reset nav-link" href="./sections/galeria.html">Galería</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./sections/contacto.html">Contacto</a>
+                                <a class="text-reset nav-link" href="./sections/servicios.html">Servicios</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-reset nav-link" href="./sections/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="text-reset nav-link dropdown-toggle" href="./productos.html#menuDesplegable"
+                                    id="menuDesplegable" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="menuDesplegable">
+                                    <!-- Pasamos por parametro la categoria que queremos levantar los datos desde los jsons -->
+                                    <li><a class="text-reset dropdown-item"
+                                            href="./productos.html?categoria=piletas">Piletas</a></li>
+                                    <li><a class="text-reset dropdown-item"
+                                            href="./productos.html?categoria=accesorios">Accesorios</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-cart px-0 ps-lg-2" data-bs-toggle="modal"
+                                    data-bs-target="#carrito">
+                                    <i class="fa-solid fa-cart-shopping"></i> <span id="contadorCarrito"></span><span
+                                        class="d-lg-none"> PRESUPUESTO</span>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -215,8 +242,8 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

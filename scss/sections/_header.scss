@@ -1,49 +1,6 @@
-header {
-  border-bottom: solid 3px $color-azul;
-  grid-area: header;
-}
-
 .preheader {
   background-color: $color-rojo;
   color: $color-blanco;
-
-  strong {
-    margin-right: 3px;
-  }
-
-  p,
-  i,
-  a {
-    color: $color-blanco;
-    display: inline-block;
-  }
-
-  ul li {
-    display: inline-block;
-    margin-left: 15px;
-  }
 }
 
-.menu ul li {
-  transition: transform $transition-time;
 
-  a {
-    @include fontstyle(18px, $weight: bold);
-  }
-}
-
-// MQ desktop
-
-@media (min-width: 992px) {
-  .menu ul li:hover {
-    transform: scale(1.1);
-  }
-}
-
-// MQ Mobile
-
-@media (max-width: 767px) {
-  header {
-    border-top: solid 3px $color-rojo;
-  }
-}

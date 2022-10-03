@@ -5,23 +5,23 @@ body {
   background-color: $color-blanco;
 }
 
-a {
-  color: $color-azul;
-  text-decoration: none;
-  transition: all $transition-time;
+// a {
+//   color: $color-azul;
+//   text-decoration: none;
+//   transition: all $transition-time;
 
-  &:hover {
-    color: $color-azul-claro;
-  }
-}
+//   &:hover {
+//     color: $color-azul-claro;
+//   }
+// }
 
-ul {
-  @include reset-list;
+// ul {
+//   @include reset-list;
 
-  li {
-    overflow: hidden;
-  }
-}
+//   li {
+//     overflow: hidden;
+//   }
+// }
 
 h1 {
   @include fontstyle(22px, $text-transform: uppercase);
