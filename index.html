@@ -11,8 +11,9 @@
     <meta name="author" content="Lis Medina">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- etiqueta link  href: escribo el enlace relativo -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap"
@@ -23,36 +24,13 @@
 </head>
 
 <body>
-    <div class="page-layout">
+    <div>
         <header>
-            <div class="container-fluid preheader">
-                <div class="row">
-                    <div class="col-8">
-                    </div>
-                    <div class="col-4">
-                        <div class="container">
-                            <div class="row">
-                                <p class="col-3"><strong>Administración:</strong></p>
-                                <!-- tel: te da la opcion para abrir alguna app p llamar o en mobile llamar directo  -->
-                                <a href="tel:2494026594" title="Administración" class="text-decoration-none col-3">
-                                    <i class="fab fa-whatsapp"></i> 2494026594
-                                </a>
-                                <p class="col-3"><strong>Servicios:</strong></p>
-                                <a href="tel:2494496102" title="Servicios" class="text-decoration-none col-3">
-                                    <i class="fab fa-whatsapp"></i> 2494496102
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <!-- Logo -->
-                    <a class="text-reset" href="./index.html" class="navbar-brand" title="Nimax">
-                        <img src="./images/logo.png" alt="Logo Tato Medina" /></a>
+                    <a class="text-reset" href="./index.html" class="navbar-brand" title="Tato Medina">
+                        <img src="./images/logo.png" alt="Logo Tato Medina" height="134" width="150" /></a>
 
                     <!-- Menú mobile -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -64,32 +42,28 @@
                     <div class="navbar-collapse justify-content-end collapse" id="navbarToggler">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="text-reset nav-link" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="text-reset nav-link" href="./sections/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="text-reset nav-link" href="./sections/galeria.html">Galería</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="text-reset nav-link" href="./sections/servicios.html">Servicios</a>
                             </li>
                             </li>
                             <li class="nav-item">
                                 <a class="text-reset nav-link" href="./sections/contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="text-reset nav-link dropdown-toggle" href="./productos.html#menuDesplegable"
+                                <a class="text-reset nav-link dropdown-toggle" href="./sections/servicios.html"
                                     id="menuDesplegable" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Productos
+                                    Servicios
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="menuDesplegable">
                                     <!-- Pasamos por parametro la categoria que queremos levantar los datos desde los jsons -->
                                     <li><a class="text-reset dropdown-item"
-                                            href="./productos.html?categoria=piletas">Piletas</a></li>
+                                            href="./sections/servicios.html?categoria=electricos">Tendidos
+                                            eléctricos</a></li>
                                     <li><a class="text-reset dropdown-item"
-                                            href="./productos.html?categoria=accesorios">Accesorios</a></li>
+                                            href="./sections/servicios.html?categoria=grua">Servicios de grúas</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -101,8 +75,8 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
 
         <main>
@@ -111,19 +85,16 @@
                     <div class="carousel-item active">
                         <img class="w-100 d-none d-md-block" src="./images/contents/main-banner-desktop.jpg"
                             alt="Servicio de grúas" />
-                        <img class="w-100 d-block d-md-none" src="./images/contents/main-banner-mobile.jpg"
-                            alt="Servicio de grúas" />
+                        <img class="w-100 d-block d-md-none" src="./images/contents/main-banner-mobile.jpg" alt="Servicio de grúas" />
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100 d-none d-md-block" src="./images/contents/main-banner-desktop.jpg"
-                            alt="Servicio de grúas" />
-                        <img class="w-100 d-block d-md-none" src="./images/contents/main-banner-mobile.jpg"
-                            alt="Servicio de grúas" />
+                        <img class="w-100 d-none d-md-block" src="./images/contents/2-desktop.jpg" alt="Servicio de grúas" />
+                        <img class="w-100 d-block d-md-none" src="./images/contents/2-mobile.jpg" alt="Servicio de grúas" />
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100 d-none d-md-block" src="./images/contents/main-banner-desktop.jpg"
+                        <img class="w-100 d-none d-md-block" src="./images/contents/3-desktop.jpg"
                             alt="Servicio de grúas" />
-                        <img class="w-100 d-block d-md-none" src="./images/contents/main-banner-mobile.jpg"
+                        <img class="w-100 d-block d-md-none" src="./images/contents/3-mobile.jpg"
                             alt="Servicio de grúas" />
                     </div>
                 </div>
@@ -171,7 +142,7 @@
                 </div>
             </div>
         </main>
-
+        <p>agregar que nos diferencia (ss)</p>
         <footer class="container-fluid pt-4">
             <div class="row">
                 <div class="col-md-2 logo d-none d-md-block">
@@ -239,10 +210,10 @@
         </div>
         <a class="fixed-btn" target="_blank" href="https://web.whatsapp.com/send?phone=+549496102"><i
                 class="fab fa-whatsapp"></i></a>
-
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 </body>
 

@@ -5,24 +5,6 @@ body {
   background-color: $color-blanco;
 }
 
-// a {
-//   color: $color-azul;
-//   text-decoration: none;
-//   transition: all $transition-time;
-
-//   &:hover {
-//     color: $color-azul-claro;
-//   }
-// }
-
-// ul {
-//   @include reset-list;
-
-//   li {
-//     overflow: hidden;
-//   }
-// }
-
 h1 {
   @include fontstyle(22px, $text-transform: uppercase);
   margin: 20px 0px;
@@ -62,18 +44,7 @@ button {
   }
 }
 
-.page-layout {
-  display: grid;
-  grid: {
-    template-columns: 1fr;
-    auto-rows: auto;
-    template-areas: "header" "main" "footer";
-  }
-}
 
-main {
-  grid-area: main;
-}
 
 .fixed-btn {
   position: fixed;
@@ -158,24 +129,6 @@ form {
   }
 }
 
-/* Bootstrap sobre-escritura */
-
-.navbar-light .navbar-nav {
-  .nav-link {
-    color: $color-azul;
-
-    &:hover {
-      color: $color-azul-claro;
-    }
-  }
-
-  .nav-link.active,
-  .show > .nav-link {
-    text-decoration: underline;
-    color: $color-azul;
-  }
-}
-
 .carousel-control-next,
 .carousel-control-prev {
   &:focus,
@@ -185,21 +138,17 @@ form {
   }
 }
 
-/* Bootstrap Mobile */
-
-@media (max-width: 767px) {
-  .navbar-brand img {
-    max-width: 75px;
+// MQ  Mobile
+@media(max-width:767px) {
+  .mobile-hidden {
+      display: none !important;
   }
 }
 
-/* Bootstrap Desktop */
+/* MQ Desktop */
 
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: {
-      right: 0.7rem;
-      left: 0.7rem;
-    }
+@media(min-width:768px) {
+  .desktop-hidden {
+      display: none !important;
   }
 }
