@@ -10,9 +10,7 @@ body {
   line-height: 1.2;
   font-weight: normal;
   text-decoration: none;
-  text-transform: none;
-  font-family: Montserrat;
-  color: black; }
+  text-transform: none; }
 
 /* Strategy: mobile last */
 body {
@@ -55,7 +53,7 @@ p {
   font-weight: normal;
   text-decoration: none;
   text-transform: none;
-  margin: 0; }
+  margin: 0px; }
 
 button {
   background: #BF2626;
@@ -134,69 +132,49 @@ form {
   background: none;
   opacity: 1; }
 
-.preheader {
-  background-color: #BF2626;
-  color: #F2F2F2; }
-  .preheader p,
-  .preheader i,
-  .preheader a {
-    color: #f2f2f2;
-    display: inline-block; }
+@media (max-width: 767px) {
+  .mobile-hidden {
+    display: none !important; } }
 
-.preheader p,
-.preheader i,
-.preheader a {
+/* MQ Desktop */
+@media (min-width: 768px) {
+  .desktop-hidden {
+    display: none !important; } }
+
+.navbar-brand img {
+  height: 90px;
+  width: auto; }
+
+footer {
   color: #F2F2F2;
-  display: inline-block; }
-
-.preheader ul li {
-  display: inline-block;
-  margin-left: 15px; }
+  background-color: #BF2626; }
 
 /* Nosotros */
-.nosotros h3 {
-  margin: 0 0 10px; }
-
 .nosotros p {
-  margin-bottom: 20px;
   text-align: justify; }
-
-/* Servicios */
-.services ul li {
-  margin-bottom: 20px; }
 
 iframe.mapa {
   width: 100%; }
 
-footer {
-  border-top: solid 3px #373B8C;
-  padding: 20px 20px 0;
-  grid-area: footer; }
-  footer .logo a img {
-    width: 75px;
-    height: auto; }
-  .nav-item a footer:hover {
-    color: #373B8C;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block; }
-    .nav-item a footer:hover:hover {
-      color: #676bb9; }
-  footer .contact ul li {
-    padding-bottom: 16px; }
-    footer .contact ul li strong {
-      margin-right: 3px; }
-    footer .contact ul li p {
-      display: inline-block;
-      color: #373B8C; }
-  footer .socials ul li a {
-    font-size: 25px; }
+footer .logo a img {
+  width: 75px;
+  height: auto; }
 
-.copyrigth {
+.nav-item a footer:hover {
+  color: #373B8C; }
+  .nav-item a footer:hover:hover {
+    color: #676bb9; }
+
+footer .contact ul li {
+  padding-bottom: 16px; }
+  footer .contact ul li p {
+    display: inline-block; }
+
+footer .copyrigth {
   font-size: 10px;
   line-height: 28px;
   font-weight: normal;
   text-decoration: none;
   text-transform: none;
-  background-color: #d94646;
+  background-color: #BF2626;
   color: #F2F2F2; }
