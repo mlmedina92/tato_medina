@@ -67,6 +67,15 @@ button {
     color: #BF2626;
     background-color: #F2F2F2; }
 
+.logos-clientes .slick-slide {
+  padding: 10px; }
+  .logos-clientes .slick-slide img {
+    max-width: 100%; }
+
+.logos-clientes .slick-prev:before,
+.logos-clientes .slick-next:before {
+  color: #676bb9; }
+
 .fixed-btn {
   position: fixed;
   right: 20px;
@@ -114,7 +123,7 @@ form {
     border-width: 1px;
     padding: 0 10px; }
 
-/* Mobile */
+/* Mobile Estilos generales */
 @media (max-width: 767px) {
   h1 {
     font-size: 20px; }
@@ -136,7 +145,7 @@ form {
   .mobile-hidden {
     display: none !important; } }
 
-/* MQ Desktop */
+/* MQ Desktop Banner principal */
 @media (min-width: 768px) {
   .desktop-hidden {
     display: none !important; } }
@@ -149,21 +158,13 @@ footer {
   color: #F2F2F2;
   background-color: #BF2626; }
 
-/* Nosotros */
-.nosotros p {
-  text-align: justify; }
-
-iframe.mapa {
-  width: 100%; }
-
-footer .logo a img {
-  width: 75px;
-  height: auto; }
+footer .icono-footer {
+  font-size: 26px; }
 
 .nav-item a footer:hover {
   color: #373B8C; }
   .nav-item a footer:hover:hover {
-    color: #676bb9; }
+    color: #373B8C; }
 
 footer .contact ul li {
   padding-bottom: 16px; }
