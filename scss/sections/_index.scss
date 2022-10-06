@@ -1,5 +1,5 @@
 /* Strategy: mobile last */
-
+// Estilos generales
 body {
   @extend %paragraph;
   background-color: $color-blanco;
@@ -38,28 +38,27 @@ button {
   line-height: 35px;
   padding: 0 20px;
   transition: all $transition-time;
-
   &:hover {
     color: $color-rojo;
     background-color: $color-blanco;
   }
 }
 
-//Galería
-.galeria {
+//carrusel clientes
+.logos-clientes {
   .slick-slide {
     padding: 10px;
     img {
       max-width: 100%;
     }
   }
-
   .slick-prev:before,
   .slick-next:before {
     color: $azul-claro;
   }
 }
 
+// Boton WP
 .fixed-btn {
   position: fixed;
   right: 20px;
@@ -91,6 +90,7 @@ button {
   }
 }
 
+// Contacto
 form {
   max-width: 600px;
   margin-bottom: 20px;
@@ -123,7 +123,7 @@ form {
   }
 }
 
-/* Mobile */
+/* Mobile Estilos generales */
 @media (max-width: 767px) {
   h1 {
     font-size: 20px;
@@ -152,14 +152,14 @@ form {
   }
 }
 
-// MQ  Mobile
+// MQ  Mobile Banner principal
 @media(max-width:767px) {
   .mobile-hidden {
       display: none !important;
   }
 }
 
-/* MQ Desktop */
+/* MQ Desktop Banner principal */
 
 @media(min-width:768px) {
   .desktop-hidden {

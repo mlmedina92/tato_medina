@@ -1,0 +1,38 @@
+[
+    {
+        "id": "p4",
+        "nombre": "Movimientos de maquinaria pesada",
+        "descripcion": "Servicios de alquiler de grúas de 27 metros de altura y de 7 toneladas , de 18 metros de altura de 4 toneladas e hidroelevadores , servicio de barquilla.",
+        "imagen": "../images/contents/presentation-2.jpg"
+    },
+    {
+        "id": "p5",
+        "nombre": "Transporte de contenedores marítimos stándar o módulos habitables",
+        "descripcion": "",
+        "imagen": "./img/products/filtracion.jpg"
+    },
+    {
+        "id": "p6",
+        "nombre": "Movimientos de silos",
+        "descripcion": "",
+        "imagen": "./img/products/instalacion.jpg"
+    },
+    {
+        "id": "p7",
+        "nombre": "Movimientos de maquinarias agrícolas",
+        "descripcion": "",
+        "imagen": "./img/products/decoracion.jpg"
+    },
+    {
+        "id": "p8",
+        "nombre": "Movimientos de piletas de fibra de vidrio",
+        "descripcion": "La gran variedad de luminarias para piscina ha sido desarrollada para realzar la belleza y extender el uso en horarios nocturnos para todo tipo de piscinas. ",
+        "imagen": "./img/products/iluminacion.jpg"
+    },
+    {
+        "id": "p9",
+        "nombre": "Movimientos de tanques y cisternas de tambos",
+        "descripcion": "La tecnología de automatización está desarrollada para el accionamiento remoto de filtros, salidas auxiliares, luminarias y calefacción.",
+        "imagen": "./img/products/automatizacion.jpg"
+    }    
+]

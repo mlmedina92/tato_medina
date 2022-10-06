@@ -4,8 +4,8 @@ $(".slider-nav").slick({
   arrows: false,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 300,
-  speed: 300,
+  autoplaySpeed: 400,
+  speed: 400,
   slidesToShow: 4,
   slidesToScroll: 1, // scrolear de a 1
   lazyLoad: 'ondemand',

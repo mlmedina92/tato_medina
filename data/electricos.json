@@ -1,0 +1,20 @@
+[
+    {
+        "id": "p1",
+        "nombre": "Tendido eléctrico de baja, media tensión y alumbrado público",
+        "descripcion": "Tendido eléctrico de urbanizaciones privadas (Proyectos: Barrio Graduados, Barrio Chacra 70, Barrio Chacra 49, Vaguada, Tendido eléctrico de la Cooperativa Eléctrica de la ciudad de Azul).",
+        "imagen": "./img/products/bombas.jpg"
+    },
+    {
+        "id": "p2",
+        "nombre": "Tendido eléctrico de urbanizaciones privadas",
+        "descripcion": "",
+        "imagen": "./img/products/filtracion.jpg"
+    },
+    {
+        "id": "p3",
+        "nombre": "Venta y colocación de pilares monofásicos y trifásicos completos premoldeados",
+        "descripcion": "",
+        "imagen": "./img/products/instalacion.jpg"
+    }
+]
