@@ -33,8 +33,8 @@
                     <img loading="lazy" src="../images/logo.png" alt="Logo Tato Medina" /></a>
 
                 <!-- Menú mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -52,8 +52,8 @@
                             <a class="text-reset nav-link" href="./contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="text-reset nav-link dropdown-toggle" href="./servicios.html"
-                                id="menuDesplegable" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="text-reset nav-link dropdown-toggle" href="./servicios.html" id="menuDesplegable"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Servicios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="menuDesplegable">
@@ -61,8 +61,8 @@
                                 <li><a class="text-reset dropdown-item"
                                         href="./servicios.html?categoria=electricos">Tendidos
                                         eléctricos</a></li>
-                                <li><a class="text-reset dropdown-item"
-                                        href="./servicios.html?categoria=grua">Servicios de grúas</a>
+                                <li><a class="text-reset dropdown-item" href="./servicios.html?categoria=grua">Servicios
+                                        de grúas</a>
                                 </li>
                             </ul>
                         </li>
@@ -78,278 +78,293 @@
             </nav>
         </div>
     </header>
-
-
-        <main>
-            <div class="container pb-4">
-                <h1>Galería de imágenes</h1>
-                <!-- First row -->
-                <h2>Servicios de grúas</h2>
-                <div class="row g-4 mb-4">
-
-                    <div class="col-sm-6 col-lg-3">
-                        <img src="../images/gallery/cinco.jpg" class="img-fluid" alt="grua" loading="lazy">
-                        <!-- Button trigger modal foto 1-->
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal-galeria">Ver</button>
-
-                        <!-- Modal foto 1-->
-                        <div class="modal fade" id="modal-galeria" tabindex="-1" aria-labelledby="modal-galeriaLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="modal-galeriaLabel">Tato Medina. Servicios de
-                                            grúas</h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="../images/gallery/cinco.jpg" class="img-fluid" alt="grua"
-                                            loading="lazy">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Modal del carrito -->
+    <div class="modal right fade" id="carrito" tabindex="-1" role="dialog" aria-labelledby="carrito">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="carrito">Presupuesto</h4>
+                    <button type="button" class="btn btn-link btn-sm btn-clear" id="btn-clear"
+                        aria-label="Vaciar">Vaciar</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="pedido">
+                        <!-- El Contenido del carrito se carga por JS -->
                     </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <img src="../images/gallery/trece.jpg" class="img-fluid" alt="grua" loading="lazy">
-                        <!-- Button trigger modal -->
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal2-galeria">Ver</button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="modal2-galeria" tabindex="-1" aria-labelledby="modal2-galeriaLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="modal2-galeriaLabel">Tato Medina. Servicios de
-                                            grúas</h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="../images/gallery/trece.jpg" class="img-fluid" alt="grua"
-                                            loading="lazy">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="total">
+                        <!-- El Contenido se carga por JS -->
                     </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <img src="../images/gallery/docee.jpg" class="img-fluid" alt="grua" loading="lazy">
-                        <!-- Button trigger modal -->
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal3-galeria">Ver</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btn-finalizar" class="closed btn btn-primary">Pedir
+                        presupuesto</button>
+                </div>
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="modal3-galeria" tabindex="-1" aria-labelledby="modal3-galeriaLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="modal3-galeriaLabel">Tato Medina. Servicios de
-                                            grúas</h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="../images/gallery/docee.jpg" class="img-fluid" alt="grua"
-                                            loading="lazy">
-                                    </div>
+    <main>
+        <div class="container pb-4">
+            <h1>Galería de imágenes</h1>
+            <!-- First row -->
+            <h2>Servicios de grúas</h2>
+            <div class="row g-4 mb-4">
+
+                <div class="col-sm-6 col-lg-3">
+                    <!-- cambio la etiqueta button por un a. Dentro del a pongo la img para que la img sea toda clickeable  -->
+
+                    <!-- Button trigger modal FOTO 1-->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal-galeria"> <img
+                            src="../images/gallery/cinco.jpg" class="img-fluid" alt="grua" loading="lazy"></a>
+                    <!-- Modal foto 1-->
+                    <div class="modal fade" id="modal-galeria" tabindex="-1" aria-labelledby="modal-galeriaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <img src="../images/gallery/tres.jpg" class="img-fluid" alt="grua" loading="lazy">
-
-                        <!-- Button trigger modal -->
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal4-galeria">Ver</button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="modal4-galeria" tabindex="-1" aria-labelledby="modal4-galeriaLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="modal4-galeriaLabel">Tato Medina. Servicios de
-                                            grúas</h2>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="../images/gallery/tres.jpg" class="img-fluid" alt="grua"
-                                            loading="lazy">
-                                    </div>
+                                <div class="modal-body">
+                                    <img src="../images/gallery/cinco.jpg" class="img-fluid" alt="grua" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Second row -->
-
-                <h2>Tendidos eléctricos</h2>
-                <div class="row g-4">
-                    <div class="col-sm-6 col-lg-3">
-                        <img src="../images/gallery/siete.jpg" class="img-fluid" alt="grua" loading="lazy">
-                        <!-- Button trigger modal -->
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal5-galeria">Ver</button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="modal5-galeria" tabindex="-1" aria-labelledby="modal5-galeriaLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="modal5-galeriaLabel">Tato Medina. Tendidos eléctricos</h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="../images/gallery/siete.jpg" class="img-fluid" alt="grua"
-                                            loading="lazy">
-                                    </div>
+                <div class="col-sm-6 col-lg-3">
+                    <!-- Button trigger modal foto2  -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal2-galeria"><img
+                            src="../images/gallery/trece.jpg" class="img-fluid" alt="grua" loading="lazy"></a>
+                    <!-- Modal foto2  -->
+                    <div class="modal fade" id="modal2-galeria" tabindex="-1" aria-labelledby="modal2-galeriaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/gallery/trece.jpg" class="img-fluid" alt="grua" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <img src="../images/gallery/diez.jpg" class="img-fluid" alt="grua" loading="lazy">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal6-galeria">Ver</button>
+                </div>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="modal6-galeria" tabindex="-1" aria-labelledby="modal5-galeriaLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="modal6-galeriaLabel">Tato Medina. Tendidos eléctricos</h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="../images/gallery/diez.jpg" class="img-fluid" alt="grua"
-                                            loading="lazy">
-                                    </div>
+                <div class="col-sm-6 col-lg-3">
+                    <!-- Button trigger modal foto3 -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal3-galeria"><img
+                            src="../images/gallery/docee.jpg" class="img-fluid" alt="grua" loading="lazy"></a>
+                    <!-- Modal foto3 -->
+                    <div class="modal fade" id="modal3-galeria" tabindex="-1" aria-labelledby="modal3-galeriaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/gallery/docee.jpg" class="img-fluid" alt="grua" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <img src="../images/gallery/diesisiete.jpg" class="img-fluid" alt="grua" loading="lazy">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal7-galeria">Ver</button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="modal7-galeria" tabindex="-1" aria-labelledby="modal7-galeriaLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="modal6-galeriaLabel">Tato Medina. Tendidos eléctricos</h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="../images/gallery/diesisiete.jpg" class="img-fluid" alt="grua"
-                                            loading="lazy">
-                                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <!-- Button trigger modal foto 4-->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal4-galeria"><img
+                            src="../images/gallery/tres.jpg" class="img-fluid" alt="grua" loading="lazy"></a>
+                    <!-- Modal foto 4-->
+                    <div class="modal fade" id="modal4-galeria" tabindex="-1" aria-labelledby="modal4-galeriaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <img src="../images/gallery/diesiocho.jpg" class="img-fluid" alt="grua" loading="lazy">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#modal8-galeria">Ver</button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="modal8-galeria" tabindex="-1" aria-labelledby="modal7-galeriaLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h2 class="modal-title fs-5" id="modal8-galeriaLabel">Tato Medina. Tendidos eléctricos</h2>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="../images/gallery/diesiocho.jpg" class="img-fluid" alt="grua"
-                                            loading="lazy">
-                                    </div>
+                                <div class="modal-body">
+                                    <img src="../images/gallery/tres.jpg" class="img-fluid" alt="grua" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="container pt-4">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <ul class="list-unstyled mb-2">
-                            <li class="nav-item"><a class="nav-link fs-6 pb-1" href="./nosotros.html">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link fs-6 pb-1" href="./servicios.html">Servicios</a></li>
-                            <li class="nav-item"><a class="nav-link fs-6 pb-1 active" href="./galeria.html">Galería</a></li>
-                            <li class="nav-item"><a class="nav-link fs-6" href="./contacto.html">Contacto</a></li>
-                        </ul>
+
+            <!-- Second row -->
+
+            <h2>Tendidos eléctricos</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <!-- Button trigger modal foto 5 -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal5-galeria"><img
+                            src="../images/gallery/siete.jpg" class="img-fluid" alt="grua" loading="lazy"></a>
+                    <!-- Modal foto 5  -->
+                    <div class="modal fade" id="modal5-galeria" tabindex="-1" aria-labelledby="modal5-galeriaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/gallery/siete.jpg" class="img-fluid" alt="grua" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-4 contact">
-                        <ul class="list-unstyled">
-                            <li class="nav-item">
-                                <p class="fw-bold fs-6">Administración:</p>
-                                <a class="nav-link" href="tel:2494026594" title="Administración">
-                                    <i class="fab fa-whatsapp"></i>
-                                    <p class="fs-6">2494026594</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <p class="fw-bold fs-6">Servicios:</p>
-                                <a class="nav-link" href="tel:2494496102" title="Servicios">
-                                    <i class="fab fa-whatsapp"></i>
-                                    <p class="fs-6">2494496102</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://goo.gl/maps/EXswAuif3Q6bjLet6">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <p class="fs-6">Rosalía de Castro 1272</p>
-                                    <p class="fs-6">Tandil (7000), Buenos Aires, Arg.</p>
-                                </a>
-                            </li>
-                        </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <!-- Boton trigler  -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal6-galeria"><img
+                            src="../images/gallery/diez.jpg" class="img-fluid" alt="grua" loading="lazy"></a>
+                    <!-- Modal foto 6 -->
+                    <div class="modal fade" id="modal6-galeria" tabindex="-1" aria-labelledby="modal5-galeriaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/gallery/diez.jpg" class="img-fluid" alt="grua" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-4 mb-4 socials text-md-end text-center">
-                        <ul class="list-unstyled d-inline-flex">
-                            <li class="nav-item me-4">
-                                <a class="nav-link" target="_blank" href="https://www.facebook.com/tatoyjose.medina"
-                                    title="Facebook">
-                                    <i class="fab fa-facebook-square icono-footer"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item me-4">
-                                <a class="nav-link" target="_blank" href="https://www.instagram.com/tatomedinaservicios"
-                                    title="Instagram">
-                                    <i class="fab fa-instagram icono-footer"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-link" target="_blank"
-                                    href="mailto:tatomedinaservicioselectricos@hotmail.com" title="E-mail">
-                                    <i class="fas fa-envelope icono-footer"></i>
-                                </a>
-                            </li>
-                        </ul>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+
+                    <!-- Boton trigler foto 7 -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal7-galeria"><img
+                            src="../images/gallery/diesisiete.jpg" class="img-fluid" alt="grua" loading="lazy"></a>
+                    <!-- Modal trigler foto 7 -->
+                    <div class="modal fade" id="modal7-galeria" tabindex="-1" aria-labelledby="modal7-galeriaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/gallery/diesisiete.jpg" class="img-fluid" alt="grua"
+                                        loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <!-- Boton trigler foto 8 -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal8-galeria"><img
+                            src="../images/gallery/diesiocho.jpg" class="img-fluid" alt="grua" loading="lazy"></a>
+                    <!-- Modal foto 8 -->
+                    <div class="modal fade" id="modal8-galeria" tabindex="-1" aria-labelledby="modal7-galeriaLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/gallery/diesiocho.jpg" class="img-fluid" alt="grua"
+                                        loading="lazy">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </footer>
-
-        <div class="copyrigth text-center px-3 py-1">
-            <p class="text-center mb-0">Copyright - 2022 © | Todos los derechos reservados. Tato Medina Tandil | <a
-                    href="https://www.linkedin.com/in/lis-medina
-            " target="_blank" class="text-decoration-none">Hecho por Lis Medina</a></p>
         </div>
+    </main>
+
+    <div>
+        <a class="fixed-btn" target="_blank" href="https://web.whatsapp.com/send?phone=+549496102"><i
+                class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <footer>
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <ul class="list-unstyled mb-2">
+                        <li class="nav-item"><a class="nav-link fs-6 pb-1" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 pb-1" href="./servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 pb-1 active" href="./galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 contact">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <p class="fw-bold fs-6">Administración:</p>
+                            <a class="nav-link" href="tel:2494026594" title="Administración">
+                                <i class="fab fa-whatsapp"></i>
+                                <p class="fs-6">2494026594</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <p class="fw-bold fs-6">Servicios:</p>
+                            <a class="nav-link" href="tel:2494496102" title="Servicios">
+                                <i class="fab fa-whatsapp"></i>
+                                <p class="fs-6">2494496102</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://goo.gl/maps/EXswAuif3Q6bjLet6">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="fs-6">Rosalía de Castro 1272</p>
+                                <p class="fs-6">Tandil (7000), Buenos Aires, Arg.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-4 socials text-md-end text-center">
+                    <ul class="list-unstyled d-inline-flex">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" target="_blank" href="https://www.facebook.com/tatoyjose.medina"
+                                title="Facebook">
+                                <i class="fab fa-facebook-square icono-footer"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" target="_blank" href="https://www.instagram.com/tatomedinaservicios"
+                                title="Instagram">
+                                <i class="fab fa-instagram icono-footer"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" target="_blank" href="mailto:tatomedinaservicioselectricos@hotmail.com"
+                                title="E-mail">
+                                <i class="fas fa-envelope icono-footer"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="copyrigth text-center px-3 py-1">
+        <p class="text-center mb-0">Copyright - 2022 © | Todos los derechos reservados. Tato Medina Tandil | <a href="https://www.linkedin.com/in/lis-medina
+            " target="_blank" class="text-decoration-none">Hecho por Lis Medina</a></p>
+    </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

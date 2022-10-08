@@ -55,7 +55,7 @@ p {
   text-transform: none;
   margin: 0px; }
 
-button {
+.btn-contacto {
   background: #BF2626;
   border: solid 1px #BF2626;
   border-radius: 2px;
@@ -63,7 +63,7 @@ button {
   line-height: 35px;
   padding: 0 20px;
   transition: all 300ms; }
-  button:hover {
+  .btn-contacto:hover {
     color: #BF2626;
     background-color: #F2F2F2; }
 
@@ -166,10 +166,8 @@ footer .icono-footer {
   .nav-item a footer:hover:hover {
     color: #373B8C; }
 
-footer .contact ul li {
-  padding-bottom: 16px; }
-  footer .contact ul li p {
-    display: inline-block; }
+footer .contact ul li p {
+  display: inline-block; }
 
 footer .copyrigth {
   font-size: 10px;
