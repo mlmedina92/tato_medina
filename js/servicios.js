@@ -1,5 +1,5 @@
 import { guardarPedido } from "./pedido.js"; //guardarpedido la llama la función listarproductos:
-import { getData } from "../data/getData.js"; //traigo los datos obtenidos de la consulta al json. get data retorna el [{},{}]
+import { getData } from "./getData.js"; //traigo los datos obtenidos de la consulta al json. get data retorna el [{},{}]
 
 //Función que lista las cards (htlm) en el div id servicios
 async function listarServicios() {

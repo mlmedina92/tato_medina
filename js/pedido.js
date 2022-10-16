@@ -44,7 +44,7 @@ function refrescarCarrito() {
                                                 }</h5>
                                             </div>
                                             <div class="col-2 text-end px-0 mx-0">
-                                            <button id="btn-eliminar-${
+                                            <button id="btn-clear-${
                                               //Creo un boton con el id de cada prod guardado en itemPedido
                                               item.servicio.id
                                             }" class="btn"><i class=" fas fa-trash-alt"></i></button>
@@ -131,7 +131,7 @@ function cargarPedido() {
 }
 
 // Bindeo botones con las funciones a través de eventos
-let btnVaciar = getElementById(`btn-clear`); //boton vaciar del modal carrito
+let btnVaciar = document.getElementById(`btn-clear`); //boton vaciar carrito del modal carrito
 btnVaciar.addEventListener('click', () => {
   Swal.fire({
     title: `¿Estás seguro de vaciar el presupuesto?`,
