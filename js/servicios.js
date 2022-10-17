@@ -13,7 +13,7 @@ async function listarServicios() {
   //for each: recorre c/ ss. del array que trae del JSON, para crear elementos html (cards de c/ss)
   servicios.forEach((servicio) => {
     // destructucturing:p/ acceder a prop de c/ obj ss.
-    let { imagen, id, nombre, descripcion } = servicio;
+    let { imagen, id, nombre } = servicio;
     //+=concateno al contenido de contenerdorServicios con cada card:
     // contenedorServicios.innerHTML = contenedorServicios.innerHTML +..
     contenedorServicios.innerHTML += `<div class="col p-2 m-0">
@@ -21,8 +21,7 @@ async function listarServicios() {
                                             <img src="${imagen}" class="card-img-top" alt="${nombre}" loading="lazy">
                                             <div class="card-body">
                                                 <h5 class="card-title">${nombre}</h5>
-                                                <p class="card-text">${descripcion}</p>
-                                        </div>
+                                            </div>
                                             <div class="card-footer p-3">
                                                 <div class="container p-0">
                                                     <div class="row align-items-end">

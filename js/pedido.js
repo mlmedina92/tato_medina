@@ -65,7 +65,7 @@ function refrescarCarrito() {
     //recorro arreglo pedido para crear eventos. Cada item captura el btn eliminar que se creo en cada ss
     pedido.forEach(function (item) {
       let btnEliminar = document.getElementById(
-        `btn-eliminar-${item.servicio.id}`
+        `btn-clear-${item.servicio.id}`
       ); //btn eliminar: evento click
       btnEliminar.addEventListener("click", () => {
         Swal.fire({
@@ -159,7 +159,7 @@ btnFinalizar.addEventListener('click' , () => {
             item.cantidad;
     });
     
-    let url = "https://wa.me/24944966102?text=" + encodeURIComponent(texto); //encodeURIComponent reemplaza espacios y caracteres especiales para ser enviados por parámetro en la url.whatsapp
+    let url = "https://wa.me/2494496102?text=" + encodeURIComponent(texto); //encodeURIComponent reemplaza espacios y caracteres especiales para ser enviados por parámetro en la url.whatsapp
     window.open(url, "blank"); //abrir nueva pestaña con la url 
 });
 
