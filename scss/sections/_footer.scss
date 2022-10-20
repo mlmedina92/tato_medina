@@ -1,26 +1,28 @@
 footer {
-  .icono-footer{
+  color: $color-blanco;
+  background-color: $color-rojo;
+
+  .icono-footer {
     font-size: 26px;
   }
 
-  .nav-item a &:hover {
+  .nav-item a {
+    color: $color-blanco;
+
+    &:hover {
       color: $color-azul;
-
-      &:hover {
-        color:$color-azul;
-      }
     }
+  }
 
-   .contact ul li {
-     p {
-       display: inline-block;
-     }
-   }
+  .contact ul li {
+    p {
+      display: inline-block;
+    }
+  }
 
-
-.copyrigth {
-  @include fontstyle(10px, 28px);
-  background-color: $color-rojo;
-  color: $color-blanco;
-}
+  .copyrigth {
+    @include fontstyle(10px, 28px);
+    background-color: $color-gris-claro;
+    color: $color-blanco;
+  }
 }

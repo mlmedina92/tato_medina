@@ -14,7 +14,8 @@ body {
 
 /* Strategy: mobile last */
 body {
-  background-color: #F2F2F2; }
+  background-color: #dfdfdf;
+  color: black; }
 
 h1 {
   font-size: 22px;
@@ -54,6 +55,11 @@ p {
   text-decoration: none;
   text-transform: none;
   margin: 0px; }
+
+.nav-link {
+  transition: all 400ms; }
+  .nav-link:hover {
+    color: 0; }
 
 .btn-contacto {
   background: #BF2626;
@@ -110,7 +116,7 @@ p.card-text {
   font-size: 12px; }
 
 .galeria-hover {
-  transition: all 0.8s ease; }
+  transition: all 0.3s ease; }
   .galeria-hover:hover {
     transition: all 0.6s ease;
     filter: brightness(30%); }
@@ -165,30 +171,28 @@ form {
   .desktop-hidden {
     display: none !important; } }
 
-.navbar-brand img {
-  height: 90px;
-  width: auto; }
+header {
+  background-color: #dad4d4; }
+  header .navbar-brand img {
+    height: 90px;
+    width: auto; }
 
 footer {
   color: #F2F2F2;
   background-color: #BF2626; }
-
-footer .icono-footer {
-  font-size: 26px; }
-
-.nav-item a footer:hover {
-  color: #373B8C; }
-  .nav-item a footer:hover:hover {
-    color: #373B8C; }
-
-footer .contact ul li p {
-  display: inline-block; }
-
-footer .copyrigth {
-  font-size: 10px;
-  line-height: 28px;
-  font-weight: normal;
-  text-decoration: none;
-  text-transform: none;
-  background-color: #BF2626;
-  color: #F2F2F2; }
+  footer .icono-footer {
+    font-size: 26px; }
+  footer .nav-item a {
+    color: #F2F2F2; }
+    footer .nav-item a:hover {
+      color: #373B8C; }
+  footer .contact ul li p {
+    display: inline-block; }
+  footer .copyrigth {
+    font-size: 10px;
+    line-height: 28px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    background-color: #dad4d4;
+    color: #F2F2F2; }

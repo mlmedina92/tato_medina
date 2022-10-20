@@ -2,7 +2,8 @@
 // Estilos generales
 body {
   @extend %paragraph;
-  background-color: $color-blanco;
+  background-color: $color-gris;
+  color:black;
 }
 
 h1 {
@@ -27,6 +28,13 @@ h4 {
 p {
   @include fontstyle($line-height: 25px);
   margin: 0px;
+}
+
+.nav-link {
+  transition: all 400ms;
+  &:hover {
+    color: red($color: #000000);
+  }
 }
 
 .btn-contacto {
@@ -103,7 +111,7 @@ p.card-text {
 
 //Galerìa
 .galeria-hover {
-  transition: all 0.8s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     transition: all 0.6s ease;
