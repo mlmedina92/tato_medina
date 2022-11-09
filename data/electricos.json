@@ -12,11 +12,11 @@
     {
         "id": "p3",
         "nombre": "Venta y colocación de pilares monofásicos completos premoldeados",
-        "imagen": "../images/contents/te.jpeg"
+        "imagen": "../images/contents/pilar1.jpg"
     },
     {
         "id": "p4",
         "nombre": "Venta y colocación de pilares trifasicos completos premoldeados",
-        "imagen": "../images/contents/te.jpeg"
+        "imagen": "../images/contents/pilar2.jpg"
     }
 ]
