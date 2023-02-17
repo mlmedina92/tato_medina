@@ -2,31 +2,31 @@
     {
         "id": "p5",
         "nombre": "Transporte de contenedores marítimos stándar o módulos habitables",
-        "imagen": "../images/contents/contenedor.jpg"
+        "imagen": "../images/contents/contenedor.png"
     },
     {
         "id": "p6",
         "nombre": "Movimientos de silos",
-        "imagen": "../images/contents/silos.jpg"
+        "imagen": "../images/contents/silos.png"
     },
     {
         "id": "p7",
         "nombre": "Movimientos de maquinarias agrícolas",
-        "imagen": "../images/contents/agricola.jpg"
+        "imagen": "../images/contents/agricola.png"
     },
     {
         "id": "p8",
         "nombre": "Movimientos de piletas de fibra de vidrio",
-        "imagen": "../images/contents/pileta.jpg"
+        "imagen": "../images/contents/pileta.png"
     },
     {
         "id": "p9",
         "nombre": "Movimientos de tanques y cisternas de tambos",
-        "imagen": "../images/contents/tambos.jpg"
+        "imagen": "../images/contents/tambos.png"
     },
     {
         "id": "p10",
         "nombre": "Movimientos de maquinaria pesada",
-        "imagen": "../images/contents/pes.jpg"
+        "imagen": "../images/contents/pes.png"
     }
 ]
